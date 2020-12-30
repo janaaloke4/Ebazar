@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signin"
+    android:background="@drawable/login">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userid"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        android:layout_marginTop="230dp"
+        android:textColorHint="#E6CACA"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:maxLength="30"
+            android:hint="  Email"
+            android:textSize="3mm"
+            android:textColorHint="#ffffff"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass"
+        app:errorEnabled="true"
+        android:layout_below="@+id/userid"
+        android:textColorHint="#E6CACA"
+        app:passwordToggleEnabled="true"
+        >
+         <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Password"
+            android:hint="  Password"
+             android:textSize="3mm"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/pass">
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgetPass1"
+            android:text="  Forgot Password?"
+            android:textSize="3mm"
+            android:textColor="#ffffff"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgetPass"
+            android:text=" click here"
+            android:textSize="3mm"
+            android:textColor="#1C86DA"
+            android:textStyle="bold"
+            />
+    </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:id="@+id/login"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="450dp"
+        android:textColor="#ffffff"
+        android:textSize="3mm"
+        android:gravity="center"
+        android:background="@color/colorlogback"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/or"
+        android:layout_below="@+id/login"
+        android:layout_marginLeft="200dp"
+        android:text="or"
+        android:textSize="3mm"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        />
+    <View
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/login"
+        android:layout_toLeftOf="@+id/or"
+        android:layout_marginRight="-190dp"
+        android:layout_marginTop="54dp"
+        android:background="#ffffff"
+        />
+    <View
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/login"
+        android:layout_toRightOf="@+id/or"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="54dp"
+        android:background="#ffffff"
+        />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/or">
+    <TableRow>
+    <TextView
+        android:id="@+id/sign_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="80dp"
+        android:clickable="true"
+        android:textSize="3mm"
+        android:text="Don't have an account ? "
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/or"
+
+        android:layout_marginTop="33dp"
+        android:clickable="true"
+        android:text="Sign Up"
+        android:textColor="#1C86DA"
+        android:textSize="3mm"
+        android:textStyle="bold" />
+    </TableRow>
+    </TableLayout>
+</RelativeLayout>

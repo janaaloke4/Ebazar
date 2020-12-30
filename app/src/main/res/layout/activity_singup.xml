@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".singup"
+    android:background="@drawable/signup1">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/in_name"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        android:layout_marginTop="130dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#444242"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:maxLength="20"
+            android:hint="  Name"
+            android:textSize="15dp"
+            android:textColor="#444242"
+
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/in_name"
+            android:gravity="center_horizontal"
+            android:id="@+id/lid"
+            >
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textSize="30dp"
+                app:ccp_defaultNameCode="IN"
+               android:layout_gravity="center"
+                app:ccp_textColor="#FCF9F9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/in_ph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#E6CACA"
+                app:errorEnabled="true"
+                >
+            <EditText
+                android:id="@+id/ph"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:layout_marginLeft="10dp"
+                android:inputType="phone"
+                android:textColor="#444242"
+                android:textSize="15dp"
+                />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/in_email"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        android:layout_below="@+id/lid"
+        android:textColorHint="#E6CACA"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:maxLength="20"
+            android:hint="  Email"
+            android:textSize="15dp"
+            android:textColorHint="#ffffff"
+            android:textColor="#444242"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/in_pass"
+        app:errorEnabled="true"
+        android:layout_below="@+id/in_email"
+        android:textColorHint="#E6CACA"
+        app:passwordToggleEnabled="true"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Password"
+            android:hint="  Password"
+            android:textSize="15dp"
+            android:textColor="#444242"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/in_con_pass"
+        app:errorEnabled="true"
+        android:layout_below="@+id/in_pass"
+        android:textColorHint="#E6CACA"
+        app:passwordToggleEnabled="true"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/con_Password"
+            android:hint="  Confirm Password"
+            android:textSize="15dp"
+            android:textColor="#444242"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hlpid"
+        android:layout_below="@+id/in_con_pass">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   i"
+            android:textStyle="italic|bold"
+            android:textColor="#3147C5"
+            android:textSize="25dp"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/help"
+        android:text="  Password must be at least 6 characters Long."
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+
+        />
+    </LinearLayout>
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:id="@+id/verify"
+        android:text="Verify mobile number"
+        android:textAllCaps="false"
+        android:layout_marginLeft="22dp"
+        android:layout_below="@+id/hlpid"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:gravity="center"
+
+        android:background="@color/colorlogback"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/or"
+        android:layout_below="@+id/verify"
+        android:layout_marginLeft="200dp"
+        android:text="or"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        />
+    <View
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/verify"
+        android:layout_toLeftOf="@+id/or"
+        android:layout_marginRight="-190dp"
+        android:layout_marginTop="26dp"
+        android:background="#ffffff"
+        />
+    <View
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/verify"
+        android:layout_toRightOf="@+id/or"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="26dp"
+        android:background="#ffffff"
+        />
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/or">
+    <TableRow>
+    <TextView
+        android:id="@+id/sign_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="80dp"
+        android:clickable="true"
+        android:textSize="3mm"
+        android:text="Already have an account ? "
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textSize="3mm"
+        android:text="Sign in"
+        android:textStyle="bold"
+        android:textColor="#1C86DA"
+        android:layout_marginTop="10dp"
+        />
+    </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

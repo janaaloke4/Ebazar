@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dis"
+        android:textSize="20dp"
+
+        android:layout_marginTop="10dp"
+        android:background="#F5EBEB"
+        />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:id="@+id/signout"
+        android:text="Sign Out"
+        android:textAllCaps="false"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="450dp"
+        android:textColor="#ffffff"
+        android:textSize="3mm"
+        android:gravity="center"
+
+        android:background="@color/colorlogback"
+        />
+
+</RelativeLayout>

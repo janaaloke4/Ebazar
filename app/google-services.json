@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "384585541283",
+    "firebase_url": "https://ebazer-a48f8.firebaseio.com",
+    "project_id": "ebazer-a48f8",
+    "storage_bucket": "ebazer-a48f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384585541283:android:76bbbe6bf2e4cd5b344116",
+        "android_client_info": {
+          "package_name": "com.example.ebazer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384585541283-pagubl7hs1jnihrlgulh1cgidvoampn6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ebazer",
+            "certificate_hash": "0a36a697d03e6ec759a0ed23ea8aa9c145724223"
+          }
+        },
+        {
+          "client_id": "384585541283-u444sv6cv5ckpgl5vi442focfeh7m4jv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADnPzSPTy0Dxn_UGI4Tzoh5NX93R4ilKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384585541283-u444sv6cv5ckpgl5vi442focfeh7m4jv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
